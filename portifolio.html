@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <style>
+    /* ======== RESET ======== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ======== HEADER ======== */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* ======== SECTIONS ======== */
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    /* ======== SOBRE ======== */
+    #sobre p {
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+        /* FOTO DE PERFIL */
+    .foto-perfil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+    .foto-perfil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    }
+
+    .foto-perfil img:hover {
+    transform: scale(1.05);
+    }
+
+      /* ======== SKILLS ======== */
+  #skills {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+  }
+
+  .skills-container {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skill p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .barra {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .progresso {
+    background: #ff9800;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: width 1s ease-in-out;
+  }
+
+
+    /* ======== PROJETOS ======== */
+    .projetos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ff9800;
+    }
+
+    /* ======== CONTATO ======== */
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #ff9800;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e68900;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Eduardo Chaga</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    
+    <!-- FOTO DE PERFIL -->
+    <div class="foto-perfil">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQEl-RY3Z7TfPA/profile-displayphoto-crop_800_800/B4DZhOrba8HAAI-/0/1753666665379?e=1759363200&v=beta&t=1kz9STrzA5OfipTc4_r9JRX78fCqxbOD7C3X4kzJx9o" alt="Minha foto de perfil">
+    </div>
+
+    <p>Olá! Sou um desenvolvedor apaixonado por tecnologia.  
+    Aqui você vai encontrar alguns dos meus projetos e formas de contato. 🚀</p>
+  </section>
+
+  <!-- SKILLS -->
+<section id="skills">
+  <h2>Minhas Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <p>HTML</p>
+      <div class="barra">
+        <div class="progresso" style="width: 90%;">90%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="barra">
+        <div class="progresso" style="width: 80%;">80%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="barra">
+        <div class="progresso" style="width: 70%;">70%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>MySQL</p>
+      <div class="barra">
+        <div class="progresso" style="width: 65%;">65%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="projetos-grid">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="formContato" method="POST" action="salvar_contato.php">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Duch1.</p>
+  </footer>
+
+  <script>
+    // Script simples para simular envio de formulário
+    document.getElementById("formContato").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Obrigado pelo contato! Retornarei em breve.");
+      this.reset();
+    });
+
+    // Animação de skills ao rolar a página
+    const skills = document.querySelectorAll('.progresso');
+
+    window.addEventListener('scroll', () => {
+      skills.forEach(skill => {
+        const pos = skill.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (pos < windowHeight - 50) {
+          skill.style.width = skill.getAttribute("style").split(":")[1];
+        }
+      });
+    });
+
+  </script>
+</body>
+</html>
